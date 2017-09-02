@@ -12,17 +12,8 @@ app.use(express.static(path.join(__dirname, 'public/')));
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'view/midterm.html'));
 });
-app.get('/a.html', function(req, res){
-  res.sendFile(path.join(__dirname, 'view/a.html'));
-});
-app.get('/mid2.html', function(req, res){
-  res.sendFile(path.join(__dirname, 'view/mid2.html'));
-});
 app.get('/midterm.html', function(req, res){
   res.sendFile(path.join(__dirname, 'view/midterm.html'));
-});
-app.get('/modal-example.html', function(req, res){
-  res.sendFile(path.join(__dirname, 'view/modal-example.html'));
 });
 
 
